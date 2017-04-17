@@ -24,6 +24,7 @@ $ npm start
 - App should make a request using `fetch` to the NASA API shared above.
 - App should render the title, explanation, and copyright of the image.
 - App should render the image itself.
+    - Sometimes the APOD is a video. App should account for this. [April 17, 2017 APOD video example.](https://apod.nasa.gov/apod/ap170417.html)
 - There should be an input control where one can set the desired width the image should render in.
 - If the width exceeds _1000px_ the app should use `hdurl` instead of `url` to render the image.
 - App should leverage `styled-components` at a minimum to style the various views
@@ -44,4 +45,4 @@ $ npm start
 
 > I have another question
 
-**Don't hesitate to reach out: [mark@quartethealth.com](mailto:mark@quartethealth.com).**
+**Don't hesitate to reach out: [eng-exercises@quartethealth.com](mailto:eng-exercises@quartethealth.com).**
