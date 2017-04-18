@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "Quartet React exercise to build a NASA APOD component",
   "scripts": {
-    "start": "webpack-dev-server --content-base build/"
+    "start": "webpack-dev-server --content-base build/",
+    "build": "tar --exclude='./build' -zcvf ./build/quartet-apod-exercise.tar.gz ./"
   },
   "dependencies": {
     "react": "^15.4.2",
