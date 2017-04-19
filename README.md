@@ -29,6 +29,8 @@ $ npm start
 - If the width exceeds _1000px_ the app should use `hdurl` instead of `url` to render the image.
 - App should leverage `styled-components` at a minimum to style the various views
 
+Please also include a file with some information on your approach and thoughts as you did the exercise.
+
 #### FAQ
 
 > Can I pull in additional libraries and/or tweak the app configuration?
