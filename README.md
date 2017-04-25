@@ -7,6 +7,8 @@
 
 One of the most popular of all federal government websites is NASA's [Astronomy Picture of the Day](https://apod.nasa.gov/apod/astropix.html) (APOD). For this exercise, you will build a React application that fetches and renders data about the APOD.
 
+Check out the [APOD API Docs](https://api.nasa.gov/api.html#apod) for the few options offered.
+
 #### Setup
 
 Lucky for you, NASA maintains a public domain JSON API that provides the APOD imagery and associated metadata which you can find [here](https://api.nasa.gov/api.html#apod). To help you get started, we've created a boilerplate template containing libraries like [fetch](https://github.com/github/fetch) and [styled-components](https://styled-components.com/) that we'd like to see you use.
