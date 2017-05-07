@@ -1,16 +1,37 @@
-import 'whatwg-fetch';
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import Form from './Form'
+import {SpaceCard, FlexContainer} from './SpaceCard'
 
+class Apod extends Component {
+  state = {
+    starData: '',
+    imgWidth: 300
+  }
+  displayData = (starData, imgWidth) => {
+    if (!starData.copyright) {
+      starData.copyright = "Public Domain"
+    }
+    this.setState({starData, imgWidth})
+  }
 
-const Throwaway = styled.p`
-  text-align: center;
-  font-size: 32px;
-  color: #2A9BD6;
-`;
-
-export default class Apod extends Component {
   render() {
-    return <Throwaway>Build me!</Throwaway>;
+    return (
+      <FlexContainer>
+        <Form onSubmit={this.displayData} />
+        <SpaceCard
+          imgWidth={this.state.imgWidth}
+          imgUrl={this.state.starData.url}
+          imgUrlHD={this.state.starData.hdurl}
+          title={this.state.starData.title}
+          explanation={this.state.starData.explanation}
+          copyright={this.state.starData.copyright}
+          mediaType={this.state.starData.media_type}
+          videoUrl
+        />
+      </FlexContainer>
+    )
   }
 }
+
+export {Apod}

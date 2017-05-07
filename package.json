@@ -4,6 +4,7 @@
   "description": "Quartet React exercise to build a NASA APOD component",
   "scripts": {
     "start": "webpack-dev-server --content-base build/",
+    "RRstart": "webpack-dev-server --content-base  --port 8081 build/",
     "build": "tar --exclude='./build' -zcvf ./build/quartet-apod-exercise.tar.gz ./"
   },
   "dependencies": {
