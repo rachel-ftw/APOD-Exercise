@@ -8,6 +8,7 @@ class Apod extends Component {
     starData: '',
     imgWidth: 300
   }
+  
   displayData = (starData, imgWidth) => {
     if (!starData.copyright) {
       starData.copyright = "Public Domain"
@@ -27,7 +28,6 @@ class Apod extends Component {
           explanation={this.state.starData.explanation}
           copyright={this.state.starData.copyright}
           mediaType={this.state.starData.media_type}
-          videoUrl
         />
       </FlexContainer>
     )

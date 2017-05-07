@@ -38,27 +38,31 @@ const CardContainer = styled(FlexContainer)`
 `;
 
 const APODimg = (props) => {
-  return <img
+  return (
+    <img
       style={{maxWidth:`${props.imgWidth}px`}}
       src={props.imgWidth >= 1000 ? props.imgUrlHD : props.imgUrl}
     />
+  )
 }
 
 const APODvideo = (props) => {
-  return <iframe
-    src={props.url}
-    width="560"
-    height="315"
-    frameborder="0"
-    allowfullscreen>
-  </iframe>
+  return (
+    <iframe
+      src={props.url}
+      width="560"
+      height="315"
+      frameborder="0"
+      allowfullscreen>
+    </iframe>
+  )
 }
 
 
 const SpaceCard = (props) => {
   return (
     <CardContainer>
-      {props.mediaType === "video" ? (
+      { props.mediaType === "video" ? (
           <APODvideo url={props.imgUrl} />
         ) : (
           <APODimg imgWidth={props.imgWidth} imgUrlHD={props.imgUrlHd} imgUrl={props.imgUrl} />
